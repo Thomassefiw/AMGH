@@ -8,7 +8,7 @@
   <title>Arbaminch General Hospital</title>
   <link rel="icon" type="image/x-icon" href="static/images/stethoscope_2002576.png">
   <style media="screen">
-    .jumbotron {
+    /* .jumbotron {
       margin-top: 0px;
       margin-bottom: 0px;
     }
@@ -19,15 +19,126 @@
 
     .alert {
       margin: 0px;
+    } */
+    .section_title{
+      margin-bottom: 7px;
+      padding-left: 7px;
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #aaaaaa;
+      border-left: 3px solid #bfa67a;
+      font-size: 700;
+      font-family: tahoma;
+    }
+
+    .section_main_title{
+      margin-top: 0;
+      margin-bottom: 37px;
+      font-size: 30px;
+      line-height: 1.27;
+      font-weight: 300;
+
+    }
+
+    .section_main_title strong{
+      font-weight: 600;
+    }
+    .about-box{
+      -webkit-box-shadow: 0 0 0 10px #000000 inset;
+      box-shadow: 0 0 0 10px #000000 inset;
+      margin-right: 1;
+      margin-top: 2;
+      position: relative;
+      display: block;
+
+    }
+
+    .box-overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.5;
+      z-index: 3;
+      transform: translateY(30px) translateX(-30px);
+      -webkit-transform: translateY(30px) translateX(-30px);
+    }
+
+    .about-box .videopopup img{
+      transform: translateY(30px) translateX(-30px);
+      -webkit-transform: translateY(30px) translateX(-30px);
+      width: 100%;
+      z-index: 1;
+    }
+
+    .about-box .videopopup{
+      position: relative;
+    }
+
+    .sonar-wrapper{
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      left: 50%;
+      margin-left: -40px;
+      margin-top: 200px;
     }
   </style>
-  <title>sumit</title>
+  <title>Arbaminch General Hospital</title>
 </head>
 
 <body>
   {% include "hospital/navbar.html" %}
   <br><br>
-  <center>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="section_title"><br>
+            <br>
+            <br>
+              <h2 class="section_main_title">WE CARE FOR <strong>Your Life</strong></h2>
+          </div>
+          <div class="about-item">
+            <p>Arba Minch General Hospital is a public hospital located in Arba Minch town, Ethiopia.</p>
+               <p>It is the only hospital serving a population of 200,747 people per year in Gamo and other nearby zones.</p>
+               <p>Even though it is named as a general hospital, it is functioning as a referral hospital with the number of
+                staff and several services it is providing.
+              </p>
+              <p>The hospital has 200 beds and has been working in collaboration with Arba Minch University.
+                It serves as a place of practice for students of the College of Medicine and Health Sciences. 
+                The medical interns, general practitioners, and specialists employed by the university also work in the hospital and serve the community.
+              </p>
+              <div class="hgt-20"></div>
+              <div class="home-button"><br>
+                <a class="btn btn-primary btn-lg" href="/" role="button">Read More</a>
+
+              </div>
+              <br><br><br><br><br>
+          </div>
+        </div>
+          <div class="col-sm-5 col-sm-offset-3">
+            <div class="about-box">
+              <div class="box-overlay"></div>
+              <a href="www.youtube.com" class="videopopup">
+                <img src="static\images\Amgh.jpg" alt="AMGH">
+                <!-- <span class="sonar-wrapper"></span>
+                  <span class="sonar-emitter"></span>
+                      <i class="fa fa-play"></i>
+                      <span class="sonar-wave"></span> -->
+
+              </a>              
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- <center>
     <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
   </center>
   <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
@@ -38,7 +149,7 @@
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
     </p>
-  </div>
+  </div> -->
   {% include "hospital/footer.html" %}
 </body>
 

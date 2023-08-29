@@ -52,7 +52,8 @@ class Appointment(models.Model):
     doctorId=models.PositiveIntegerField(null=True)
     patientName=models.CharField(max_length=40,null=True)
     doctorName=models.CharField(max_length=40,null=True)
-    appointmentDate=models.DateField(auto_now=True)
+    appointmentDateTime=models.DateTimeField(null=True)
+    # appointmentTime=models.TimeField(null=True)
     description=models.TextField(max_length=500)
     status=models.BooleanField(default=False)
 
@@ -77,6 +78,4 @@ class PatientDischargeDetails(models.Model):
     total=models.PositiveIntegerField(null=False)
 
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
+
